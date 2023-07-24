@@ -225,7 +225,6 @@ const Doctors = () => {
           open={open}
           handleClose={handleClose}
           dialogTitle={`${!editDoctor ? "Add" : "Edit"} a Doctor`}
-          dialogContent={() => <AddDoctorContent />}
           loading={modalLoading}
           loadingTitle={`${!editDoctor ? "Adding" : "Editing"} a Doctor...`}
         >

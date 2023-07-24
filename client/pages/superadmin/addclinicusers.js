@@ -237,7 +237,6 @@ const AddClinicUsers = () => {
           open={open}
           handleClose={handleClose}
           dialogTitle={`${!editUser ? "Add" : "Edit"} a Clinic User`}
-          dialogContent={() => <AddPatientContent />}
           loading={modalLoading}
           loadingTitle={`${!editUser ? "Adding" : "Editing"} a Clinic User...`}
         >

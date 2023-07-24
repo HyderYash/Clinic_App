@@ -293,7 +293,6 @@ const Appointments = () => {
           open={open}
           handleClose={handleClose}
           dialogTitle="Add Appointment"
-          dialogContent={() => <AddAppointmentContent />}
           loading={modalLoading}
           loadingTitle="Adding Appointment..."
         >

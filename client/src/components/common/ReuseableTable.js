@@ -74,7 +74,7 @@ export const getServerSideProps = async () => {
   return { props: {} };
 };
 
-function ReuseableTable({ title, rows, actions }) {
+const ReuseableTable = ({ title, rows, actions }) => {
   const [cols, setCols] = useState([]);
   useEffect(() => {
     if (rows.length > 0) {
@@ -111,6 +111,6 @@ function ReuseableTable({ title, rows, actions }) {
       components={{ Pagination: PatchedPagination }}
     />
   );
-}
+};
 
 export default ReuseableTable;

@@ -109,7 +109,7 @@ export default function PageHeader({ children }) {
         <Toolbar />
         <div className={classes.drawerContainer}>
           <List>
-            <Link href="/dashboard">
+            <Link href="/dashboard" passHref>
               <ListItem button>
                 <ListItemIcon style={{ minWidth: "30px" }}>
                   <DashboardIcon />
@@ -118,7 +118,7 @@ export default function PageHeader({ children }) {
               </ListItem>
             </Link>
             <Divider />
-            <Link href="/dashboard/appointments">
+            <Link href="/dashboard/appointments" passHref>
               <ListItem button>
                 <ListItemIcon style={{ minWidth: "30px" }}>
                   <DateRangeIcon />
@@ -127,7 +127,7 @@ export default function PageHeader({ children }) {
               </ListItem>
             </Link>
             <Divider />
-            <Link href="/dashboard/patients">
+            <Link href="/dashboard/patients" passHref>
               <ListItem button>
                 <ListItemIcon style={{ minWidth: "30px" }}>
                   <EmojiPeopleIcon />
@@ -136,7 +136,7 @@ export default function PageHeader({ children }) {
               </ListItem>
             </Link>
             <Divider />
-            <Link href="/dashboard/doctors">
+            <Link href="/dashboard/doctors" passHref>
               <ListItem button>
                 <ListItemIcon style={{ minWidth: "30px" }}>
                   <AccountBoxIcon />
@@ -145,7 +145,7 @@ export default function PageHeader({ children }) {
               </ListItem>
             </Link>
             <Divider />
-            <Link href="/changepassword">
+            <Link href="/changepassword" passHref>
               <ListItem button>
                 <ListItemIcon style={{ minWidth: "30px" }}>
                   <VpnKeyIcon />

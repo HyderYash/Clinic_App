@@ -79,7 +79,7 @@ export default function SuperAdminPageHeader({ children }) {
         <Toolbar />
         <div className={classes.drawerContainer}>
           <List>
-            <Link href="/superadmin/addclinics">
+            <Link href="/superadmin/addclinics" passHref>
               <ListItem button>
                 <ListItemIcon style={{ minWidth: "30px" }}>
                   <BusinessIcon />
@@ -88,7 +88,7 @@ export default function SuperAdminPageHeader({ children }) {
               </ListItem>
             </Link>
             <Divider />
-            <Link href="/superadmin/addclinicusers">
+            <Link href="/superadmin/addclinicusers" passHref>
               <ListItem button>
                 <ListItemIcon style={{ minWidth: "30px" }}>
                   <EmojiPeopleIcon />
@@ -97,7 +97,7 @@ export default function SuperAdminPageHeader({ children }) {
               </ListItem>
             </Link>
             <Divider />
-            <Link href="/changepassword">
+            <Link href="/changepassword" passHref>
               <ListItem button>
                 <ListItemIcon style={{ minWidth: "30px" }}>
                   <VpnKeyIcon />

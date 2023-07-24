@@ -23,7 +23,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-const changepassword = () => {
+const ChangePassword = () => {
   const router = useRouter();
   const [oldPassword, setOldPassword] = useState("");
   const [showOldPassword, setShowOldPassword] = useState(false);
@@ -178,4 +178,4 @@ const changepassword = () => {
   );
 };
 
-export default changepassword;
+export default ChangePassword;

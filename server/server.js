@@ -7,9 +7,6 @@ app.use(cors());
 app.use(express.json());
 // Packages/Functions Import
 const { connectDB } = require("./utils/databaseConnect");
-connectDB().then((con) => {
-  global.connection = con;
-});
 
 app.get("/", (req, res) => {
   res.json({
@@ -20,9 +17,12 @@ app.get("/", (req, res) => {
 // Routes
 app.use("/api", require("./routes/routes"));
 
-app.listen(PORT, (err) => {
-  console.log(`Server is listening on port ${PORT}`);
-  if (err) {
-    throw new Error("Something went wrong...");
-  }
+connectDB().then((con) => {
+  global.connection = con;
+  app.listen(PORT, (err) => {
+    console.log(`Server is listening on port ${PORT}`);
+    if (err) {
+      throw new Error("Something went wrong...");
+    }
+  });
 });

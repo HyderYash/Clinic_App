@@ -2,7 +2,7 @@ import jwt_decode from "jwt-decode";
 
 var API_ROOT_PATH = "";
 if (process.env.NODE_ENV === "production") {
-  API_ROOT_PATH = "https://elated-garb-cod.cyclic.app/api";
+  API_ROOT_PATH = "https://clinic-app-backend-genm.onrender.com";
 } else {
   API_ROOT_PATH = "http://localhost:5000/api";
 }

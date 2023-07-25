@@ -72,7 +72,12 @@ export default function PatientID() {
     getDoctorOfPatientByID(clinicID);
     getAppointmentByPatientID(clinicID);
     setLoading(false);
-  }, [router.isReady]);
+  }, [
+    router.isReady,
+    getAppointmentByPatientID,
+    getDoctorOfPatientByID,
+    getPatientByID,
+  ]);
 
   const ChipBasedOnAppointmentType = ({ type, title }) => {
     if (type === 1) {

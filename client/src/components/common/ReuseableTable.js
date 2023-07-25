@@ -46,7 +46,7 @@ export function PatchedPagination(props) {
 }
 
 export const tableIcons = {
-  Add: forwardRef((props, ref) => <AddBox {...props} ref={ref} />),
+  Add: () => <AddBox />,
   Check: forwardRef((props, ref) => <Check {...props} ref={ref} />),
   Clear: forwardRef((props, ref) => <Clear {...props} ref={ref} />),
   Delete: forwardRef((props, ref) => <DeleteOutline {...props} ref={ref} />),
